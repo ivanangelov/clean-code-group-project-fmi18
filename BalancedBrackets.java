@@ -1,6 +1,13 @@
 import java.util.Stack;
 
+/**
+ *A simple class for Bralanced Brackets task on hackerrank.
+ */
 public class BalancedBrackets {
+    /**
+     *A static method with the solution.Checks if the brackets in an expression are balanced.
+     *@param expression a string representing the expression with the brackets
+     */
     private static boolean isBalanced(String expression) {
         Stack<Character> stack = new Stack<>();
         for (int i = 0; i < expression.length(); i++) {
