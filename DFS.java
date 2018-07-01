@@ -3,6 +3,9 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ *Represents DFS of a graph
+ */
 public class DFS {
     private int v;
     private HashMap<Integer, List<Integer>> adj;
@@ -20,7 +23,10 @@ public class DFS {
             adj.get(v).add(w);
         }
     }
-
+    
+    /**
+     *DFS utility method
+     */
     private void DFSUtil(int s, boolean[] visited) {
         visited[s] = true;
         System.out.print(s + " ");
