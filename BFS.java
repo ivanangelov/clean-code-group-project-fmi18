@@ -25,7 +25,7 @@ public class BFS {
     /**
      *Traverses the graph using BFS.
      *@param s the starting node
-     * /
+     */
     void BFS(int s) {
         boolean[] visited = new boolean[this.v];
         LinkedList<Integer> queue = new LinkedList<>();
