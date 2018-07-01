@@ -1,5 +1,9 @@
 import java.util.*;
 
+/**
+ *Represent the popular BFS.
+ *
+ */
 public class BFS {
     private int v;
     private HashMap<Integer, List<Integer>> adj;
@@ -16,8 +20,12 @@ public class BFS {
         }else{
             adj.get(v).add(w);
         }
-    }
+    
 
+    /**
+     *Traverses the graph using BFS.
+     *@param s the starting node
+     * /
     void BFS(int s) {
         boolean[] visited = new boolean[this.v];
         LinkedList<Integer> queue = new LinkedList<>();
